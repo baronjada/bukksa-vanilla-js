@@ -5,6 +5,10 @@
   --text-colour: #040426;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Parkinsans", sans-serif;
   margin: 0;
@@ -23,14 +27,12 @@ h2 {
   font-weight: 600;
   line-height: 1.4;
 }
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 28px;
   font-weight: 600;
 }
+
 header {
   background-color: var(--accent-colour);
   padding: 1rem;
@@ -39,4 +41,49 @@ header {
 main {
   padding: 1rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.book-card-component {
+  background-color: #fff;
+  border-radius: 14px;
+  display: flex;
+  width: 660px;
+  height: 360px;
+  padding: 24px 32px;
+  justify-content: space-between;
+}
+
+.book-card-content {
+  text-align: left;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.book-card-book-title,
+.book-card-author-name,
+.book-card-cover-image,
+.book-card-blurb {
+  margin: 0;
+}
+
+.book-card-book-title {
+  font-size: 28px;
+}
+
+.book-card-author-name {
+  font-size: 20px;
+}
+
+.book-card-cover-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-card-cover-image img {
+  height: 100%;
 }
