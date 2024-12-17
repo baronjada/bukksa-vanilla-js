@@ -1,0 +1,42 @@
+:root {
+  --primary-colour: #040426;
+  --secondary-colour: #f2f0ef;
+  --accent-colour: #e6d7ff;
+  --text-colour: #040426;
+}
+
+body {
+  font-family: "Parkinsans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-colour);
+  font-size: 16px;
+  color: var(--text-colour);
+}
+h1 {
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+header {
+  background-color: var(--accent-colour);
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  padding: 1rem;
+  text-align: center;
+}
