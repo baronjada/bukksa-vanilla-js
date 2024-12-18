@@ -72,10 +72,12 @@ main {
 
 .book-card-book-title {
   font-size: 28px;
+  margin-bottom: 8px;
 }
 
 .book-card-author-name {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .book-card-cover-image {
