@@ -39,15 +39,49 @@ header {
   text-align: center;
 }
 main {
-  padding: 1rem;
+  padding: 44px 0;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
+/**Reusable button styles**/
+
+.branded-button-dark,
+.branded-button-light {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 24px;
+  font-family: "Parkinsans", sans-serif;
+  transition: all 200ms ease-in-out;
+}
+
+.branded-button-dark {
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
+}
+
+.branded-button-dark:hover {
+  background-color: var(--accent-colour);
+  color: var(--primary-colour);
+}
+
+.branded-button-light {
+  background-color: var(--accent-colour);
+  color: var(--primary-colour);
+}
+
+.branded-button-light:hover {
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
+}
+
+/**End of - Reusable button styles**/
+
 .book-card-component {
   background-color: #fff;
   border-radius: 14px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   width: 660px;
   height: 360px;
@@ -61,6 +95,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: start;
 }
 
 .book-card-book-title,
@@ -88,4 +123,10 @@ main {
 
 .book-card-cover-image img {
   height: 100%;
+}
+
+.homepage-book-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
