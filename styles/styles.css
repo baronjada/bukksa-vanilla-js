@@ -84,14 +84,14 @@ main {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   width: 660px;
-  height: auto;
+  height: min-content;
   padding: 24px 32px;
   justify-content: space-between;
 }
 
 .book-card-content {
   text-align: left;
-  width: 360px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -130,4 +130,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+.shortened-blurb {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  max-height: 50px;
 }

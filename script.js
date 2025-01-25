@@ -1,3 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Hello, World! Your project is up and running.");
-});
+const bookCardBlurb = document.querySelector(".book-card-blurb");
+bookCardBlurb.addEventListener("click", () =>
+  bookCardBlurb.classList.toggle("shortened-blurb")
+);
