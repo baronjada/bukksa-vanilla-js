@@ -1,4 +1,6 @@
-const bookCardBlurb = document.querySelector(".book-card-blurb");
-bookCardBlurb.addEventListener("click", () =>
-  bookCardBlurb.classList.toggle("shortened-blurb")
+const bookCardBlurbs = document.querySelectorAll(".book-card-blurb");
+bookCardBlurbs.forEach((blurb) =>
+  blurb.addEventListener("click", () =>
+    blurb.classList.toggle("shortened-blurb")
+  )
 );
