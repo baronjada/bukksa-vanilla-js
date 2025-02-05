@@ -178,7 +178,7 @@ main {
 
 @media (max-width: 800px) {
   .book-card-component {
-    width: 400px;
+    width: 360px;
   }
 
   .book-card-cover-image {
