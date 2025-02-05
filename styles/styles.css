@@ -153,3 +153,10 @@ main {
   -webkit-box-orient: vertical;
   width: 300px;
 }
+
+@media (max-width: 1400px) {
+  .homepage-book-cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
