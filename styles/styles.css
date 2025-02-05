@@ -94,7 +94,6 @@ main {
   width: 300px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: start;
 }
 
@@ -132,11 +131,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 360px;
-}
-
-.book-card-cover-image img {
-  height: 100%;
+  width: 40%;
 }
 
 .homepage-book-cards {
@@ -158,5 +153,35 @@ main {
   .homepage-book-cards {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .book-card-component {
+    flex-direction: column;
+  }
+
+  .book-card-content {
+    order: 2;
+    width: 100%;
+    margin-top: 36px;
+    gap: 14px;
+  }
+
+  .shortened-blurb {
+    width: 100%;
+  }
+
+  .book-card-cover-image {
+    width: 60%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .book-card-component {
+    width: 400px;
+  }
+
+  .book-card-cover-image {
+    width: 100%;
   }
 }
