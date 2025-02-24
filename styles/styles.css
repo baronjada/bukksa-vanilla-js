@@ -14,14 +14,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--secondary-colour);
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-colour);
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 64px;
   font-weight: 800;
   line-height: 1.2;
+  margin: 0;
 }
 
 h2 {
@@ -38,9 +39,62 @@ h3 {
 
 header {
   background-color: var(--accent-colour);
-  padding: 1rem;
   text-align: center;
+  display: flex;
+  padding: 24px 44px;
+  justify-content: space-between;
 }
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin: 0 0 0 44px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-colour);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-colour);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-menu-and-account {
+  display: flex;
+  align-items: center;
+}
+
+.fa-regular.fa-circle-user {
+  margin: 0 0 0 44px;
+  font-size: 44px;
+  transition: 200ms ease-in-out;
+}
+
+.fa-regular.fa-circle-user:hover {
+  padding: 0 0 10px 0;
+}
+
 main {
   padding: 44px 0;
   text-align: center;
@@ -56,7 +110,7 @@ main {
   border: none;
   border-radius: 24px;
   font-family: "Parkinsans", sans-serif;
-  transition: all 200ms ease-in-out;
+  transition: 300ms ease-in-out;
   font-size: 16px;
 }
 
