@@ -326,6 +326,11 @@ main {
   .nav-branding {
     flex-grow: 1;
     justify-content: flex-start;
+    font-size: 44px;
+  }
+
+  .fa-regular.fa-circle-user {
+    font-size: 32px;
   }
 }
 
