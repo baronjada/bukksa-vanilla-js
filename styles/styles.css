@@ -283,7 +283,6 @@ main {
 
   .hamburger {
     display: block;
-    margin: 0 0 0 36px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -321,6 +320,8 @@ main {
 
   .navbar {
     justify-content: flex-end;
+    gap: 24px;
+    padding: 0 24px;
   }
 
   .nav-branding {
