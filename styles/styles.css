@@ -126,6 +126,8 @@ a {
   height: 3px;
   margin: 5px auto;
   background-color: var(--primary-colour);
+  -webkit-transition: all 0.3ms ease-in-out;
+  transition: all 0.3ms ease-in-out;
 }
 
 main {
@@ -312,7 +314,7 @@ main {
     margin: 16px 0;
   }
 
-  .nav-item.active {
+  .nav-menu.active {
     left: 0;
   }
 
