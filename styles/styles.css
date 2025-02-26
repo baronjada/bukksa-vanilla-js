@@ -301,13 +301,14 @@ main {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 140px;
     gap: 0;
     flex-direction: column;
     background-color: var(--accent-colour);
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    padding: 0 0 32px 0;
   }
 
   .nav-item {
