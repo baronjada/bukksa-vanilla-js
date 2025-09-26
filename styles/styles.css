@@ -147,6 +147,7 @@ main {
   font-family: "Parkinsans", sans-serif;
   transition: 300ms ease-in-out;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .branded-button-dark {
@@ -177,7 +178,7 @@ main {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   width: 660px;
-  height: min-content;
+  height: auto;
   padding: 24px 32px;
   justify-content: space-between;
 }
@@ -217,20 +218,20 @@ main {
 }
 
 .book-card-blurb {
-  margin: 0 0 28px 0;
+  margin: 28px 0 28px 0;
 }
 
 .book-card-cover-image {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 40%;
 }
 
 .homepage-book-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 36px;
 }
 
 .shortened-blurb {
